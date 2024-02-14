@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -128,10 +128,72 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
  /* MEDIA QUERY */
- @media (max-width:768px){
+
+@media (max-width:3000px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul,ol, menu{
+        list-style: none;
+    }
+    img{
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: currentColor;
+    }
+}
+
+ @media (max-width:1140px){
     .container{
-        max-width: 500px;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .lessons .col{
+        width: calc(12 * 100% / 12);
     }
  }
 
+ @media (max-width:768px){
+    .container{
+        width: 100%;
+        max-width: 480px;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .lessons .col{
+        width: calc(12 * 100% / 12);
+    }
+ }
+
+ @media (max-width:480px){
+    .container{
+        width: 100%;
+        max-width: 480px;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .row .col{
+        width: calc(12 * 100% / 12);
+    }
+    .steps .col{
+        width: calc(12 * 100% / 12);
+    }
+    .col.col-left{
+        width: 100%;
+        width: calc(12 * 100% / 12);
+    }
+    .col.col-riht{
+        width: 100%;
+        width: calc(12 * 100% / 12);
+    }
+
+ }
  
