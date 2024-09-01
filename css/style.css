@@ -183,6 +183,9 @@ img {
     .row .col{
         width: calc(12 * 100% / 12);
     }
+    .row .card .text{
+        font-size: 14px;
+    }
     .steps .col{
         width: calc(12 * 100% / 12);
     }
